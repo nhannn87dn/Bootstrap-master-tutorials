@@ -1,4 +1,4 @@
-# Session 5 - Sử dụng Bootstrap 5
+# Session 2 - Sử dụng Bootstrap 5
 
 Từ phiên bản 5, Bootstrap đưa chúng ta tiếp cận theo **8 phần chính**
 
@@ -99,52 +99,55 @@ Chi tiết: <https://getbootstrap.com/docs/5.2/layout/css-grid/>
 
 ==========================================
 
-## ⭐ Content
+> **Trong Session 02 đi tìm hiểu 2 Mục: Components và Forms**
 
-Chuyên về trình bày đội dung
+## ⭐ Components
 
-### 🍄 Reboot
+**Components là gì?** Nói một cách dễ hiểu là Bootstrap đã tạo sẵn các thành phần thường hay dùng và định dạng chúng sẵn bằng CSS rồi. Bây giờ muốn sử dụng cái nào thì chỉ cần vào mục Components của Bootstrap 5.x xem code rồi đưa vào trang HTML thôi.
 
-Css Reset các Css mặc định trình duyệt dựa trên Normalize.css
+Danh sách các Components và cách sử dụng xem ngay trên trang chính thức:
+
+<https://getbootstrap.com/docs/5.2/components/accordion>
+
+**❤️12 Components quan trọng thường sử dụng:**
+
+### 1. Navbar - Thanh điều hướng.
+
+### 2. Pagination - Phân trang
+
+### 3. Badges
+
+### 4. Card
+
+### 5. List group
+
+### 6. Accordion
+
+### 7. Dropdowns
+
+### 8. Buttons
+
+### 9. Modal
+
+### 10. Toasts
+
+### 11. Alers
+
+### 12. Collapse
 
 
-### 🍄 Typography
-
-Chủ đề về cách hiển thị Text
-
-- Headings: h1-h6
-- Display headings: display-1 -> display-6
-- Lead
-- Inline text elements
-- Abbreviations
-- Blockquotes
-- Alignment
-- Lists
-
-Ví dụ: <https://getbootstrap.com/docs/5.2/content/typography/>
-
-
-### 🍄 Images
-
-Boottrap cung cấp các `class` giúp chúng ta thao tác, định dạng hình ảnh một cách đơn giản hơn.
-
-Xem ví dụ: 05.Examples\Session-2\images\index.html
-
-### 🍄 Figures
-
-Dùng để tạo Caption cho một hình ảnh
-
-Xem ví dụ: 05.Examples\Session-2\images\figures.html
-
-==========================================
-
-Tiếp tục mục Table ở Session 06
 
 ==========================================
-## KẾT LẠI
 
 
-- Linh hồn của Bootstrap 5 là **flexbox grid system** với 12 columns.
-- Responsive với 6 điểm Breakpoints với quy tắc Mobile First.
-- Components là các Block IU được Bootstrap dựng sẵn, chỉ việc dùng.
-- Còn lại là các `class` được Bootstrap định nghĩa sẵn để định dạng các elements một cách nhanh chóng mà ko cần tạo thêm file `.css`
+## ⭐ Forms
+
+Bootstrap cung cấp các `class` để định dạng layout của `form` một cách nhanh chóng, hỗ trợ responsive, tương thích trình duyệt.
+
+Chi tiết xem: <https://getbootstrap.com/docs/5.2/forms/overview/>
+
+- Các kiểu hiển thị input trong Bootstrap 5
+- Layout Form: Horizontal và Vertical
+- Validation Form Bootstrap 5
+
+

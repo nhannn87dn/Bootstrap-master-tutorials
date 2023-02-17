@@ -1,16 +1,16 @@
 # Học Bootstrap 5.x và jQuery Cơ bản
 
 Yêu cầu đầu vào:
+
 - Html, Css
 - Javascript cơ bản
-
 
 ## Cài đặt: Visual Studio Code
 
 Download:
 > <https://code.visualstudio.com/>
 
-## Cài đặt các extensions:
+## Cài đặt các extensions
 
 - Auto Close Tag (Jun Han)
 - Auto Rename Tag (Jun Han)
@@ -23,32 +23,30 @@ Download:
 - Color Highlight
 - Dracula Official (theme)
 
+## Một số công cụ về màu
 
-## Một số công cụ về màu :
+<https://colorhunt.co/>
+<https://coolors.co/>
+<https://colors.eva.design/>
+<https://mycolor.space/>
+<https://material.io/resources/color/#!/?view.left=0&view.right=0>
+<https://flatuicolors.com/>
+<https://color.adobe.com/create/color-wheel>
+<https://colorpalettes.net/>
+<https://www.materialpalette.com/>
 
-https://colorhunt.co/
-https://coolors.co/
-https://colors.eva.design/
-https://mycolor.space/
-https://material.io/resources/color/#!/?view.left=0&view.right=0
-https://flatuicolors.com/
-https://color.adobe.com/create/color-wheel
-https://colorpalettes.net/
-https://www.materialpalette.com/
+## Một số Website về thiết kế
 
-## Một số Website về thiết kế: 
+<https://collectui.com/>
 
-https://collectui.com/
+## Mẫu Template Bootstrap 5.x
 
-
-## Mẫu Template Bootstrap 5.x: 
-
-Từ khóa tìm kiếm: 
+Từ khóa tìm kiếm:
 
 - Best Free Templates Bootstrap 5 ecommerce
 - Best Free Bootstrap 5 Admin Dashboard Templates
 
 ## Một số website cung cấp ảnh chất lượng cao miễn phí
 
-- https://pixabay.com/
-- https://unsplash.com/
+- <https://pixabay.com/>
+- <https://unsplash.com/>

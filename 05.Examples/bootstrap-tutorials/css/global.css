@@ -1,3 +1,6 @@
+:root{
+    --main-color: #f60;
+}
 body {
-    background-color: var(--bs-body-bg);
+    background-color: var(--main-color);
 }

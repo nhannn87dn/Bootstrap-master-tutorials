@@ -153,6 +153,7 @@ Chi tiết: <https://getbootstrap.com/docs/5.3/getting-started/browsers-devices/
 
 
 =================================================
+
 ## ⭐ 7.  Bootstrap Templates
 
 - Demo Bootstrap Templates
@@ -161,3 +162,7 @@ Chi tiết: <https://getbootstrap.com/docs/5.3/getting-started/browsers-devices/
 Templates Free: 
 
 - <https://adminlte.io/blog/bootstrap-5-templates/>
+
+====================
+
+Phần tiếp theo: [Part2](Understanding-Programming-In-Bootstrap.md)

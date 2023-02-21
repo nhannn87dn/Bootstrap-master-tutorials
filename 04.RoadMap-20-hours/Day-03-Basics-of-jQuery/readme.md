@@ -63,7 +63,7 @@ $(document).ready(function(){
 
 ##  ⭐ 2. jQuery Selector
 
-Tham khảo: <https://www.w3schools.com/jquery/jquery_selectors.asp>
+Tham khảo: <https://www.w3schools.com/jquery/jquery_ref_selectors.asp>
 
 
 ##  ⭐ 3. JSON

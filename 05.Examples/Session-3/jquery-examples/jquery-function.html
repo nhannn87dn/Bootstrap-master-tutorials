@@ -17,14 +17,19 @@
     <!-- Content END HERE -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+
+      console.log('1');
+
       $(document).ready(function(){
 
-          basicFunction('Softech Aptech');
+        console.log('2');
+        basicFunction('Softech Aptech');
 
       });
       
       function basicFunction(name){
-          $('div.container').append(`<h2>Hello ${name} !</h2>`);
+        console.log('3');
+        $('div.container').append(`<h2>Hello ${name} !</h2>`);
       }
     </script>
   </body>

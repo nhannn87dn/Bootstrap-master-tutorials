@@ -2,5 +2,9 @@
     --main-color: #f60;
 }
 body {
-    background-color: var(--main-color);
+    /* background-color: var(--main-color); */
+}
+
+.custom {
+    color: blue;
 }

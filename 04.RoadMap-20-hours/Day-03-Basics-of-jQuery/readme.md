@@ -220,7 +220,7 @@ const myJSON = JSON.stringify(myObj);
 
 ## ⭐ 1. Sử dụng các hàm dựng sẳn trong jQuery
 
-
+- Doc: <https://api.jquery.com>
 
 ## ⭐ 2. Hàm live() trong jQuery
 

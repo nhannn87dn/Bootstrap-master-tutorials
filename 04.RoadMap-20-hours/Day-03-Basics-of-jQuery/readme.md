@@ -65,6 +65,25 @@ $(document).ready(function(){
 
 Tham khảo: <https://www.w3schools.com/jquery/jquery_ref_selectors.asp>
 
+### GET content, giá trị một thuộc tính DOM elements
+
+- html tags
+- input values
+- data attributes
+
+
+Làm ví dụ về lấy thông tin sản phẩm đưa xuống LocalStorage
+
+### SET content, giá trị một thuộc tính DOM elements
+
+- html tags
+- input values
+- data attributes
+
+
+Làm ví dụ về lấy thông tin sản phẩm từ LocalStorage đưa lên giỏ hàng
+
+
 
 ##  ⭐ 3. JSON
 

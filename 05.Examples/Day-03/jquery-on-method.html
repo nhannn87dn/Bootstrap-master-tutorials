@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Content BEGIN HERE -->
+    <div class="container">
+        <h1>Built-in Functions</h1>
+      
+        <div class="row my-3">
+          <div class="col">
+            <button class="btn btn-danger btn-lg">Button</button>
+          </div>
+          
+        </div>
+
+        <h2 class="text-danger">Trạng thái: <span id="status"></span></h2>
+    </div>
+    <!-- Content END HERE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+       
+      $(".container" ).on( "mouseover", "button", function() {
+          $( "#status" ).text("Bạn đang để chuột lên Button");
+      });
+
+      $(".container" ).on( "click", "button", function() {
+          $( "#status" ).text("Bạn đã click vào Button");
+      });
+
+      $(".container" ).on( "mouseleave", "button", function() {
+        $( "#status" ).text("Bạn đã rời chuột khỏi Button");
+      });
+
+    </script>
+  </body>
+</html>

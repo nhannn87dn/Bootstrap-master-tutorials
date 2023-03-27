@@ -138,9 +138,54 @@ Ví dụ:
 ```
 
 
-##  ⭐ 3. JSON
+======================================
 
-### 3.1 JSON là gì ?
+##  B. Functions Widgets Plugins in jQuery
+
+======================================
+
+## ⭐ 1. Sử dụng các hàm dựng sẳn trong jQuery
+
+- Doc: <https://api.jquery.com>
+
+## ⭐ 2. Hàm live() trong jQuery
+
+- Phương thức này đã bị khai tử từ jQuery 1.9
+- Chuyển qua dùng on() để thay thế.
+- Xem ví dụ: 05.Examples\Session-4\jquery-on-method.html
+
+## ⭐ 3. AJAX với jQuery
+
+### 3.1 AJAX jQuery với hàm load()
+
+- Xem ví dụ: 05.Examples\Session-4\jquery-load-example\index.html
+
+### 3.2  jQuery và Callback
+
+- Xem ví dụ: 05.Examples\Session-4\jquery-callback.html
+
+### 3.3  jQuery và phương thức $.get()
+
+Xem ví dụ: 05.Examples\Session-4\jquery-ajax-get.html
+
+### 3.4  jQuery và phương thức $.post()
+
+Xem ví dụ: 05.Examples\Session-4\jquery-ajax-post.html
+
+## ⭐ 4. Autocomplete trong jQuery
+
+- Xem ví dụ: 05.Examples\Session-4\jquery-autocomplete.html
+
+## ⭐ 5. Data table plugin sử dụng jQuery
+
+Xem: <https://datatables.net/>
+
+
+
+
+##  ⭐ C JSON
+
+### 1 JSON là gì ?
 
 - JSON là viết tắt của **J**ava**S**cript **O**bject **N**otation.
 - JSON Là một định dạng trao đổi dữ liệu nhẹ nhàng.
@@ -158,7 +203,7 @@ Xem đẩy đủ: <https://www.w3schools.com/js/js_json_intro.asp>
 - Truy cập các phần tử một JSON
 
 
-### 3.2 Cú pháp JSON
+### 2 Cú pháp JSON
 
 ```js
 //JSON
@@ -218,7 +263,7 @@ Nó khác Javascript ở chổ là **không bao gồm**: function, date, undefin
 
 
 
-### 3.3 Sử dụng JSON
+### 3 Sử dụng JSON
 
 ```js
 person = {
@@ -232,7 +277,7 @@ console.log(employees);
 
 ```
 
-### 3.3 Convert một chuổi sang JSON
+### 4 Convert một chuổi sang JSON
 
 Ví dụ 1:
 
@@ -273,7 +318,7 @@ obj.age = eval("(" + obj.age + ")");
 ```
 
 
-### 3.4 Convert JSON Object sang JSON string
+### 5 Convert JSON Object sang JSON string
 
 ```js
 const myObj = { "name": "John", "age": 31, "city": "New York" };
@@ -283,45 +328,3 @@ const myJSON = JSON.stringify(myObj);
 '{"name":"John", "age":31, "city":"New York"}'
 
 ```
-
-======================================
-
-##  B. Functions Widgets Plugins in jQuery
-
-======================================
-
-## ⭐ 1. Sử dụng các hàm dựng sẳn trong jQuery
-
-- Doc: <https://api.jquery.com>
-
-## ⭐ 2. Hàm live() trong jQuery
-
-- Phương thức này đã bị khai tử từ jQuery 1.9
-- Chuyển qua dùng on() để thay thế.
-- Xem ví dụ: 05.Examples\Session-4\jquery-on-method.html
-
-## ⭐ 3. AJAX với jQuery
-
-### 3.1 AJAX jQuery với hàm load()
-
-- Xem ví dụ: 05.Examples\Session-4\jquery-load-example\index.html
-
-### 3.2  jQuery và Callback
-
-- Xem ví dụ: 05.Examples\Session-4\jquery-callback.html
-
-### 3.3  jQuery và phương thức $.get()
-
-Xem ví dụ: 05.Examples\Session-4\jquery-ajax-get.html
-
-### 3.4  jQuery và phương thức $.post()
-
-Xem ví dụ: 05.Examples\Session-4\jquery-ajax-post.html
-
-## ⭐ 4. Autocomplete trong jQuery
-
-- Xem ví dụ: 05.Examples\Session-4\jquery-autocomplete.html
-
-## ⭐ 5. Data table plugin sử dụng jQuery
-
-Xem: <https://datatables.net/>

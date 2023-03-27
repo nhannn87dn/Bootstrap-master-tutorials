@@ -1,5 +1,7 @@
 # A. Basics-of-jQuery
 
+>jQuery là thư viện được viết từ JavaScript, jQuery giúp xây dựng các chức năng bằng Javascript dễ dàng, nhanh và giàu tính năng hơn, code gọn hơn.
+
 
 Tham khảo 2 nguồn học jQuery:
 
@@ -8,81 +10,132 @@ Tham khảo 2 nguồn học jQuery:
 - w3School: <https://www.w3schools.com/jquery/jquery_intro.asp>
 
 
-## ⭐ 1. jQuery Functions
+## ⭐ 1. Tích hợp jQuery vào Html
 
+Dùng link CDN: <https://cdnjs.com/libraries/jquery>
 
-1. Basic Declaration: 
-
-```js
-function basicFunction(name){
-    console.log(`Hello ${name} !`);
-}
+```html
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 ```
 
-2. Declaration as a variable name: 
+Hoặc tải về rồi nhúng vào như file js bình thường.
 
-```js
-
-let multiply = function(a,b){
-    return a*b;
-}
-
-```
+Để script này vào trước thẻ `</body>` đóng.
 
 
-3. Self-invoking function Declaration:
 
-Hay còn gọi là anonymous function: hàm nặc danh, hàm không tên.
-
-```js
-(function(){
-    console.log('Anonymous function');
-})();
-
-```
-
-4. User-defined function Declaration:
-
-```js
-
-$(document).ready(function(){
-
-    // Defined function
-    $.fn.myFunction = function() {
-      console.log('hello world');
-    };
-
-    //Call function
-    $("#call").click(function(){
-        $.fn.myFunction();
-    });
-
-});
-
-```
 
 ##  ⭐ 2. jQuery Selector
 
+Cú pháp: 
+
+```js
+$(selector).action();
+```
+
+- `$` : dấu $ là ký hiệu để ta khai báo sử dụng Jquery
+- selector : chính là các thành phần mình chọn trên trang web. Mình có thể chọn theo id, class, hay tên thẻ.
+
+- action : chính là hành động mà ta tính thực hiện trên phần tử web mà ta đã chọn
+Jquery selector được sử dụng để tìm các phần tử trên web dựa vào tên, id, class, type, attribute của một phần tử HTML
+
 Tham khảo: <https://www.w3schools.com/jquery/jquery_ref_selectors.asp>
 
-### GET content, giá trị một thuộc tính DOM elements
+### 💥GET content, giá trị một thuộc tính DOM elements
+
+- html content
+
+Lấy nội dung bên trong thẻ h1
+
+```html
+    <h1 class="heading"><span>Hello H1</span></h1>
+
+    <script>
+        let content_html = $("h1.heading").html();
+        let content_only = $("h1.heading").text();
+    </script>
+```
+
+
+- html atributes
+
+Lấy giá trị thuộc tính của Elements
+
+```html
+ <a href="https://24h.com.vn" target="_blank">24h.com.vn</a>
+ <div class="divClass">Hello Div</div>
+
+ <script>
+    // Lấy lên thì phải tạo một biến để hứng kết quả
+
+    let href = $("a").attr("href"); //output: https://24h.com.vn
+    //thẻ a làm selector
+    //attr() là action, method
+    //attr("href") lấy giá trị thuộc tính href
+
+    let divClass = $("div").attr("class"); //output class:  divClass
+ <script>
+
+```
+
+- input values
+
+Lấy giá trị của input
+
+```html
+    <input type="text" id="username" name="username" value="Nguyễn Văn A" />
+
+    <input type="checkbox" checked name="isAdmin" value="1">
+    <input type="checkbox"  name="isAdmin" value="0">
+
+    <script>
+        // Lấy lên thì phải tạo một biến để hứng kết quả
+        let username = $("#username").val(); //output : Nguyễn Văn A
+        // selector bằng ID 
+
+        let isAdmin = $("input[name=isAdmin]:checked").val(); //output : 1
+        //selector bằng tên của input 
+
+    </>>
+```
+
+- data attributes
+
+Lấy thuộc tính data trong html5
+
+```html
+    <div class="product_item" data-id="123" data-price="200" data-name="iPhone 14 Pro Max">
+    ...</div>
+
+    <script>
+        let id = $('.product_item').data('id');
+        //let id = $('.product_item').attr('data-id');
+    </script>
+
+```
+
+Lưu ý: Trong các ví dụ trên mỗi ví dụ sử dụng các loại selector khác nhau, nhưng ko có nghĩa với trường hợp đó thì dùng selector đó mà là muốn thể hiện có nhiều cách để selector tới một element.
+
+---
+
+### 💥SET content, giá trị một thuộc tính DOM elements
 
 - html tags
 - input values
 - data attributes
 
 
-Làm ví dụ về lấy thông tin sản phẩm đưa xuống LocalStorage
+>Theo quy tắc lấy lên thế nào thì làm ngược lại là SET
 
-### SET content, giá trị một thuộc tính DOM elements
+Ví dụ:
 
-- html tags
-- input values
-- data attributes
-
-
-Làm ví dụ về lấy thông tin sản phẩm từ LocalStorage đưa lên giỏ hàng
-
+```js
+    $("#username").val("Nguyễn Thị B");
+    //Update input username với giá trị mới
+    $("a").attr("href","https://github.com/");
+    //Update link thẻ a bằng link mới
+    $("h1").html("<p>Welcome to Softech</p>");
+```
 
 
 ##  ⭐ 3. JSON

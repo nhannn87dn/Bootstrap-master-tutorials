@@ -74,7 +74,7 @@ Lấy giá trị thuộc tính của Elements
     //attr("href") lấy giá trị thuộc tính href
 
     let divClass = $("div").attr("class"); //output class:  divClass
- <script>
+ </script>
 
 ```
 
@@ -110,7 +110,7 @@ Lấy thuộc tính data trong html5
     <script>
         let id = $('.product_item').data('id');
         //let id = $('.product_item').attr('data-id');
-    </script>
+    </>
 
 ```
 

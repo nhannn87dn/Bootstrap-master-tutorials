@@ -148,6 +148,34 @@ Ví dụ:
 
 - Doc: <https://api.jquery.com>
 
+```js
+    //Thêm một class mới vào element
+    $('div').addClass('classname');
+
+    //Xóa một class từ element
+    $('div').removeClass('classname');
+
+    //Thêm nếu chưa có hoặc xóa nếu tồn tại class từ element
+    $('div').toggleClass('classname');
+
+    //Ẩn một Element hide(speed,easing,callback)
+    $('div').hide();
+
+    //Hiển thị một elemet đã ẩn
+    $('div').show();
+
+
+    //Thêm một thuộc tính css cho element
+    //css("propertyname","value");
+    $("p").css("background-color", "yellow");
+
+
+     //Thêm nhiều thuộc tính css cho element
+    //css({"propertyname":"value","propertyname":"value",...});
+    $("p").css({"background-color": "yellow", "font-size": "200%"});
+
+```
+
 ## ⭐ 2. Hàm live() trong jQuery
 
 - Phương thức này đã bị khai tử từ jQuery 1.9

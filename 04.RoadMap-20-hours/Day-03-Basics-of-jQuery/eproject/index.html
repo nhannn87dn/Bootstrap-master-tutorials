@@ -93,15 +93,15 @@
               <div class="product_list">
                     <div class="row g-3 row-cols-2 row-cols-md-3 row-cols-lg-5">
                         <div class="col">
-                            <div class="product_item bg-white p-3 shadow-sm">
+                            <div class="product_item bg-white p-3 shadow-sm" data-price="32000000" data-name="Xiaomi Redmi Note 13">
                                 <img class="img-fluid" src="https://ecshopvietnam.com/ecshopmi/cdn/images/202204/thumb_img/xiaomi-12-thumb-G4320-1650508324877.jpg" alt="">
-                                <h5 class="mt-3">Xiaomi Redmi Note 12</h5>
+                                <h5 class="mt-3">Xiaomi Redmi Note 13</h5>
                                 <div class="prices">
                                     <strong class="text-danger">32.000.000</strong>
                                     <del>48.000.000</del>
                                 </div>
                                 <div class="actions text-center mt-2">
-                                    <button class="btn btn-danger btn-sm"><i class="fa fa-shopping-cart"></i> Add To Card </button>
+                                    <button data-price="32000000" data-name="Xiaomi Redmi Note 12" onclick="addToCart(this)" type="buton" class="btn btn-danger btn-sm"><i class="fa fa-shopping-cart"></i> Add To Card </button>
                                 </div>
                             </div>
                         </div>
@@ -123,7 +123,7 @@
                                 <div class="card border-0 rounded-0">
                                     <img src="https://ecshopvietnam.com/ecshopmi/cdn/images/202204/thumb_img/xiaomi-11-lite-5g-ne-thumb-G4311-1650508360053.jpg" class="img-fluid p-3 pb-0" alt="...">
                                     <div class="card-body">
-                                      <h5 class="card-title">Xiaomi Redmi Note 12</h5>
+                                      <h5 class="card-title">Xiaomi Redmi Note 14</h5>
                                       <div class="prices hstack gap-2">
                                         <strong class="text-danger">32.000.000</strong>
                                         <del>48.000.000</del>
@@ -167,5 +167,24 @@
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+
+
+
+    function addToCart(el){
+      // let price = $(el).data("price");
+      // let name = $(el).data("name");
+      // console.log(price,name);
+
+      let parent = $(el).parents('div.product_item');
+
+      let price = parent.data("price");
+      let name = parent.data("name");
+
+      let h5 = parent.find('h5').text();
+      console.log(h5);
+    }
+  </script>
   </body>
 </html>

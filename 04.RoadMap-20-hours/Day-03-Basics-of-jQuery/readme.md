@@ -176,40 +176,35 @@ Ví dụ:
 
 ```
 
-## ⭐ 2. Hàm live() trong jQuery
+## ⭐ 2. Events jQuery
 
-- Phương thức này đã bị khai tử từ jQuery 1.9
+- Doc: <https://learn.jquery.com/events/event-basics/>
 - Chuyển qua dùng on() để thay thế.
-- Xem ví dụ: 05.Examples\Session-4\jquery-on-method.html
+- Xem ví dụ: 05.05.Examples\Day-03\jquery-on-method.html
 
 ## ⭐ 3. AJAX với jQuery
 
-### 3.1 AJAX jQuery với hàm load()
+### 3.1  jQuery và phương thức $.get()
 
-- Xem ví dụ: 05.Examples\Session-4\jquery-load-example\index.html
+Xem ví dụ: 05.Examples\Day-03\jquery-ajax-get.html
 
-### 3.2  jQuery và Callback
+### 3.2  jQuery và phương thức $.post()
 
-- Xem ví dụ: 05.Examples\Session-4\jquery-callback.html
+Xem ví dụ: 05.05.Examples\Day-03\jquery-ajax-post.html
 
-### 3.3  jQuery và phương thức $.get()
+### 3.3 Ajax and Form
 
-Xem ví dụ: 05.Examples\Session-4\jquery-ajax-get.html
 
-### 3.4  jQuery và phương thức $.post()
 
-Xem ví dụ: 05.Examples\Session-4\jquery-ajax-post.html
+==> Nên dùng `fetch` để thay thế Ajax
 
 ## ⭐ 4. Autocomplete trong jQuery
 
-- Xem ví dụ: 05.Examples\Session-4\jquery-autocomplete.html
+- Xem ví dụ: 05.Examples\Day-03\jquery-autocomplete.html
 
-## ⭐ 5. Data table plugin sử dụng jQuery
+## ⭐ 5. Effect jQuery
 
-Xem: <https://datatables.net/>
-
-
-
+- Doc: <https://learn.jquery.com/effects/intro-to-effects/>
 
 ##  ⭐ C JSON
 

@@ -41,6 +41,8 @@ Jquery selector được sử dụng để tìm các phần tử trên web dựa
 
 Tham khảo: <https://www.w3schools.com/jquery/jquery_ref_selectors.asp>
 
+Danh sách API action: <https://api.jquery.com/>
+
 ### 💥GET content, giá trị một thuộc tính DOM elements
 
 - html content

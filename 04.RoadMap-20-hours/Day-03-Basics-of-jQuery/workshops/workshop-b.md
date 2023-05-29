@@ -1,6 +1,6 @@
 # Thực hành tại Lab - Session 4
 
-Nguồn data: <https://jsonplaceholder.typicode.com/users>
+Nguồn data: <https://jsonplaceholder.typicode.com/posts>
 
 
 ## Step 1:

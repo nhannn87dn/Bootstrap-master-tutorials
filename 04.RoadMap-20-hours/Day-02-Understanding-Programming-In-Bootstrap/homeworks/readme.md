@@ -1,5 +1,5 @@
 # Workshop
 
-Làm layout giống link này sử dụng Bootstrap
+Làm Landing Page giống hình dưới sử dụng Bootstrap
 
-<https://ecshopvietnam.com/ecshopmi/mi-clean>
+![land](landing-page-layout.png)

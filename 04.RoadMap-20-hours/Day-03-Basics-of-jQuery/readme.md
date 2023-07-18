@@ -30,20 +30,34 @@ Hoặc tải về rồi nhúng vào như file js bình thường.
 Cú pháp: 
 
 ```js
-$(selector).action();
+$(selector).method();
 ```
 
 - `$` : dấu $ là ký hiệu để ta khai báo sử dụng Jquery
 - selector : chính là các thành phần mình chọn trên trang web. Mình có thể chọn theo id, class, hay tên thẻ.
 
-- action : chính là hành động mà ta tính thực hiện trên phần tử web mà ta đã chọn
+- method : chính là hành động mà ta tính thực hiện trên phần tử web mà ta đã chọn
 Jquery selector được sử dụng để tìm các phần tử trên web dựa vào tên, id, class, type, attribute của một phần tử HTML
 
 Tham khảo: <https://www.w3schools.com/jquery/jquery_ref_selectors.asp>
 
 Danh sách API action: <https://api.jquery.com/>
 
-### 💥GET content, giá trị một thuộc tính DOM elements
+
+##  ⭐ 3.  $(document).ready
+
+Trong jQuery phương thức này chứa một callback, nó sẽ thực thi khi mọi thứ đã hoàn thành
+
+```js
+$(document).ready(function(){
+    console.log("Hello, jQuery!");
+});
+```
+
+
+##  ⭐ 4. Tương tác với HTML DOM
+
+### 💥4.1 GET content, giá trị một thuộc tính DOM elements
 
 - html content
 
@@ -85,20 +99,35 @@ Lấy giá trị thuộc tính của Elements
 Lấy giá trị của input
 
 ```html
+    <form id="myForm">
     <input type="text" id="username" name="username" value="Nguyễn Văn A" />
 
     <input type="checkbox" checked name="isAdmin" value="1">
     <input type="checkbox"  name="isAdmin" value="0">
+    </form>
 
     <script>
-        // Lấy lên thì phải tạo một biến để hứng kết quả
-        let username = $("#username").val(); //output : Nguyễn Văn A
-        // selector bằng ID 
+        $("#myForm").submit(function(event){
+            //Ngăn form submit theo mặc định
+            event.preventDefault();
 
-        let isAdmin = $("input[name=isAdmin]:checked").val(); //output : 1
-        //selector bằng tên của input 
+            // Lấy lên thì phải tạo một biến để hứng kết quả
+            let username = $("#username").val(); 
+            //output : Nguyễn Văn A
 
-    </>>
+            let isAdmin = $("input[name=isAdmin]:checked").val(); 
+            //output : 1
+            //selector bằng tên của input 
+
+            // Xử lý dữ liệu ở đây (ví dụ: gửi dữ liệu đến server)
+            console.log(username,isAdmin);
+
+            // Reset biểu mẫu sau khi gửi thành công
+            $("#myForm")[0].reset();
+        });
+        
+
+    </script>
 ```
 
 - data attributes
@@ -120,7 +149,7 @@ Lưu ý: Trong các ví dụ trên mỗi ví dụ sử dụng các loại select
 
 ---
 
-### 💥SET content, giá trị một thuộc tính DOM elements
+### 💥4.2 SET content, giá trị một thuộc tính DOM elements
 
 - html tags
 - input values
@@ -142,11 +171,8 @@ Ví dụ:
 
 ======================================
 
-##  B. Functions Widgets Plugins in jQuery
 
-======================================
-
-## ⭐ 1. Sử dụng các hàm dựng sẳn trong jQuery
+## ⭐ 5. CSS Classes
 
 - Doc: <https://api.jquery.com>
 
@@ -160,12 +186,6 @@ Ví dụ:
     //Thêm nếu chưa có hoặc xóa nếu tồn tại class từ element
     $('div').toggleClass('classname');
 
-    //Ẩn một Element hide(speed,easing,callback)
-    $('div').hide();
-
-    //Hiển thị một elemet đã ẩn
-    $('div').show();
-
 
     //Thêm một thuộc tính css cho element
     //css("propertyname","value");
@@ -178,37 +198,68 @@ Ví dụ:
 
 ```
 
-## ⭐ 2. Events jQuery
+## ⭐ 6. jQuery Effect
+
+```js
+ //Ẩn một Element hide(speed,easing,callback)
+$('div').hide();
+
+//Hiển thị một elemet đã ẩn
+$('div').show();
+
+//https://www.w3schools.com/jquery/jquery_fade.asp
+$("#div1").fadeIn();
+$("#div2").fadeIn("slow");
+$("#div3").fadeIn(3000);
+
+//https://www.w3schools.com/jquery/jquery_slide.asp
+$("#panel").slideDown();
+```
+
+
+## ⭐ 7. Events jQuery
 
 - Doc: <https://learn.jquery.com/events/event-basics/>
-- Chuyển qua dùng on() để thay thế.
+- Tất cả các sự kiện jQuery nên Chuyển qua dùng on() để thay thế.
 - Xem ví dụ: 05.05.Examples\Day-03\jquery-on-method.html
 
-## ⭐ 3. AJAX với jQuery
 
-### 3.1  jQuery và phương thức $.get()
+```js
+$("p").on("click", function(){
+  $(this).hide();
+});
+
+
+$("p").on({
+  mouseenter: function(){
+    $(this).css("background-color", "lightgray");
+  },
+  mouseleave: function(){
+    $(this).css("background-color", "lightblue");
+  },
+  click: function(){
+    $(this).css("background-color", "yellow");
+  }
+});
+```
+
+## ⭐ 8. AJAX với jQuery
+
+### 8.1  jQuery và phương thức $.get()
 
 Xem ví dụ: 05.Examples\Day-03\jquery-ajax-get.html
 
-### 3.2  jQuery và phương thức $.post()
+### 8.2  jQuery và phương thức $.post()
 
 Xem ví dụ: 05.05.Examples\Day-03\jquery-ajax-post.html
 
-### 3.3 Ajax and Form
-
-
+### 8.3 Ajax and Form
 
 ==> Nên dùng `fetch` để thay thế Ajax
 
-## ⭐ 4. Autocomplete trong jQuery
+Doc: <https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch>
 
-- Xem ví dụ: 05.Examples\Day-03\jquery-autocomplete.html
-
-## ⭐ 5. Effect jQuery
-
-- Doc: <https://learn.jquery.com/effects/intro-to-effects/>
-
-##  ⭐ C JSON
+##  ⭐ 9. C JSON
 
 ### 1 JSON là gì ?
 

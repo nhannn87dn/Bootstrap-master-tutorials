@@ -45,14 +45,24 @@ Yêu cầu:
 Cho một đoạn code html như sau:
 
 ```html
-<input placeholder="username" type="text" name="username" value="" />
-<input  placeholder="password" type="text" name="password" value="" />
+<form id="myForm">
+  <input placeholder="username" type="text" name="username"  />
+  <input  placeholder="password" type="password" name="password" />
+  <button type="submit">Submit</button>
+</form>
 ```
 
 Yêu cầu: 
 
-* Bước 1: Add cho 2 input nói trên 2 giá trị tương ứng vào thuộc tính value
-* Bước 2: Add cho 2 input nói trên 2 thuộc tính `id`
-* Bước 3: Lấy 2 giá trị vừa add ở bước 1 dựa vào `id` đã thêm ở bước 2, rồi show kết quả ra console
+* Bước 1: Lấy giá trị từ 2 ô username, password
+* Bước 2: Kiểm tra 
+- Nếu username chưa điền thì báo lỗi
+- Nếu username ít hơn 4 kí tự thì báo lỗi
+- Nếu password chưa điền thì báo lỗi
+- Nếu password ít hơn 8 kí tự thì báo lỗi
 
-Gợi ý: thực hiện tuần từ từng bước là được
+* Bước 3: Nếu vượt qua được kiểm tra thì lấy username, password đem so sánh
+
+- Nếu username = 'aptech' và password = '38yenbai' thì thông báo đăng nhập thành công
+- Ngược lại: thông báo Sai username hoặc password
+
